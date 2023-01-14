@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main class="container">
+    <section>
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section>
+      <h3 class="mensaje">Try it free 7 days <span>then $20/mo. thereafter</span></h3>
+      <form id="formulario">
+        <div class="contenedor_input" id="nombre" >
+          <div class="input">
+            <input type="text" name="nombre"placeholder="First Name">
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="alerta">First Name <span>does not correspond</span></div>
+        </div>
+        <div class="contenedor_input" id="apellido">
+          <div class="input">
+            <input type="text" name="apellido" placeholder="Last Name">
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="alerta">Last Name <span>does not correspond</span></div>
+        </div>
+        <div class="contenedor_input" id="email">
+          <div class="input">
+            <input type="email" name="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="alerta">email <span>does not correspond</span></div>
+        </div>
+        <div class="contenedor_input" id="clave">
+          <div class="input">
+            <input type="password" name="clave" placeholder="Password">
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="alerta">Password <span>does not correspond</span></div>
+        </div>
+        <button type="submit">Claim your free trial</button>
+        <p>
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </p>
+      </form>
+    </section>
+ </main> 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="https://github.com/fersrm">Fer_srm</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
