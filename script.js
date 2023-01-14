@@ -33,6 +33,7 @@ const validarFromulario = (e) =>{
 const validarCampo = (expresion,input,campo)=>{
     if(expresion.test(input.value)){
         document.getElementById(campo).classList.remove('error');
+        document.getElementById(campo).classList.add('correcto');
         campos[campo] = true;
     }else{
         const mensaje=document.querySelector(`#${input.name} .alerta span`);

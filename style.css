@@ -82,7 +82,9 @@ input{
     top: 0.8rem;
     display: none;
 }
-
+.correcto input{
+    border: solid 2px var(--color2); 
+}
 .error input{
     border: solid 2px var(--color1);
 }
@@ -128,15 +130,18 @@ footer{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (min-width: 950px) {
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
     .container{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         min-height: 100vh;
         max-width: 1440px;
     }
     section{
-        width: 45%;
+        width: 40%;
         text-align: start;
     }
     section h1{
